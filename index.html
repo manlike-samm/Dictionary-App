@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+    <title>Document</title>
+</head>
+<body class="h-screen flex justify-center items-center bg-slate-600 " style="font-family: 'Poppins' ">
+
+  <div class="wrapper  rounded-lg pt-7 pb-7 px-11 shadow-d flex flex-col justify-center items-center bg-sky-50 text-gray-600">
+    <div class="w-96 space-y-8 box-border">
+      <div>
+        <h2 class="header mt-6 text-center text-3xl font-semibold text-rose-400" style="font-family: 'Lobster';">
+          My Dictionary
+        </h2>
+      </div>
+      <form class="search " action="#" method="POST">
+            <div class=" mt-8 mb-5 relative rounded">
+            <input id="word" name="word" type="text" class=" rounded-xl border-4 h-14 w-full px-9  border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:z-10 hover:cursor-text hover:border-rose-100 hover:font-medium" placeholder="Search a word...">
+            <i class="fas fa-search absolute top-1/2 left-3.5 text-lg text-gray-400 -translate-y-1/2 "></i>
+            
+            </div>
+      </form>
+      <p class="info-text text-xs mt-1 w-full active:hidden">*Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+      <ul class="h-0 opacity-0 pr-px">
+        <li class="word flex list-none mb-3.5 items-center pb-4 border-b border-b-gray-300 justify-between">
+          <div class="details">
+            <p class="text-2xl font-medium">__</p>
+            <span class="text-xs text-gray-400">_ _</span>
+          </div>
+          <i class="fas fa-volume-up text-gray-400 cursor-pointer"></i>
+        </li>
+        <div class="content max-h-56 overflow-y-auto">
+          <li class="meaning flex list-none mb-3.5 items-center pb-4 border-b border-b-gray-300 justify-between">
+            <div class="details pl-2.5 rounded-t-md rounded-l-md border-l-4 border-l-rose-500">
+              <p class="font-semibold ">Meaning</p>
+              <span class="text-sm text-gray-400">___</span>
+            </div>
+          </li>
+          <li class="example flex list-none mb-3.5 items-center pb-4 border-b border-b-gray-300 justify-between">
+            <div class="details pl-2.5 rounded-t-md rounded-l-md border-l-4 border-l-rose-500">
+              <p class="font-semibold ">Example</p>
+              <span class="text-sm text-gray-400">___</span>
+            </div>
+          </li>
+          <li class="synonyms flex list-none mb-3.5 items-center pb-4 justify-between ">
+            <div class="details pl-2.5 rounded-t-md rounded-l-md border-l-4 border-l-rose-500">
+              <p class="font-semibold ">Synonyms</p>
+              <div class="list flex flex-wrap">
+                <span class="text-sm text-gray-400 cursor-pointer mr-1 underline">xkjx</span>
+                <span class="text-sm text-gray-400 cursor-pointer mr-1 underline">ss</span>
+                <span class="text-sm text-gray-400 cursor-pointer mr-1 underline"></span>
+                <span class="text-sm text-gray-400 cursor-pointer mr-1 underline"></span>
+                <span class="text-sm text-gray-400 cursor-pointer mr-1 underline"></span>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="dc.js"></script>
+    
+</body>
+</html>
